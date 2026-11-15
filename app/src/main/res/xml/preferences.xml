@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/settings_general">
+        <SwitchPreferenceCompat
+            android:key="auto_start"
+            android:title="@string/setting_auto_start"
+            android:summary="@string/setting_auto_start_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="biometric_lock"
+            android:title="@string/setting_biometric_lock"
+            android:summary="@string/setting_biometric_lock_summary"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="theme"
+            android:title="@string/setting_theme"
+            android:summary="@string/setting_theme_summary"
+            android:defaultValue="system"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_security">
+        <Preference
+            android:key="backup_config"
+            android:title="@string/setting_backup_config"
+            android:icon="@drawable/ic_backup" />
+
+        <Preference
+            android:key="restore_config"
+            android:title="@string/setting_restore_config"
+            android:icon="@drawable/ic_restore" />
+
+        <Preference
+            android:key="clear_logs"
+            android:title="@string/setting_clear_logs"
+            android:icon="@drawable/ic_delete" />
+
+        <Preference
+            android:key="export_logs"
+            android:title="@string/setting_export_logs"
+            android:icon="@drawable/ic_file_download" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_advanced">
+        <EditTextPreference
+            android:key="magisk_path"
+            android:title="@string/setting_magisk_path"
+            android:summary="@string/setting_magisk_path_summary"
+            android:defaultValue="/data/adb/magisk/magisk"
+            android:dialogTitle="@string/setting_magisk_path" />
+
+        <ListPreference
+            android:key="shell_type"
+            android:title="@string/setting_shell_type"
+            android:summary="@string/setting_shell_type_summary"
+            android:defaultValue="auto"
+            android:entries="@array/shell_entries"
+            android:entryValues="@array/shell_values" />
+
+        <ListPreference
+            android:key="selinux_mode"
+            android:title="@string/setting_selinux_mode"
+            android:summary="@string/setting_selinux_mode_summary"
+            android:defaultValue="unchanged"
+            android:entries="@array/selinux_entries"
+            android:entryValues="@array/selinux_values" />
+
+        <SwitchPreferenceCompat
+            android:key="zygisk_enabled"
+            android:title="@string/setting_zygisk_enabled"
+            android:summary="@string/setting_zygisk_enabled_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="deny_list_mode"
+            android:title="@string/setting_deny_list_mode"
+            android:summary="@string/setting_deny_list_mode_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/title_temp_root">
+        <SeekBarPreference
+            android:key="default_temp_duration"
+            android:title="@string/temp_root_duration"
+            android:defaultValue="10"
+            android:min="1"
+            android:max="1440" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_disable_temp"
+            android:title="@string/temp_root_auto_disable"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_about">
+        <Preference
+            android:key="about_version"
+            android:title="@string/about_version"
+            android:summary="1.0.0"
+            android:enabled="false" />
+
+        <Preference
+            android:key="about_github"
+            android:title="@string/about_github"
+            android:icon="@drawable/ic_github" />
+
+        <Preference
+            android:key="about_telegram"
+            android:title="@string/about_telegram"
+            android:icon="@drawable/ic_telegram" />
+
+        <Preference
+            android:key="about_donate"
+            android:title="@string/about_donate"
+            android:icon="@drawable/ic_donate" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

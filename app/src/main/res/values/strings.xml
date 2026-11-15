@@ -1,0 +1,197 @@
+﻿<resources>
+    <!-- App name is set via build.gradle resValue for each flavor -->
+    <string name="app_name_short">PixyRoot</string>
+
+    <!-- Main Screen -->
+    <string name="title_root_status">Root Status</string>
+    <string name="title_temp_root">Temporary Root</string>
+    <string name="title_root_hide">Root Hide</string>
+    <string name="title_exploits">Exploits</string>
+    <string name="title_logs">Logs</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="status_rooted">Device is Rooted</string>
+    <string name="status_not_rooted">Device is Not Rooted</string>
+    <string name="status_temp_active">Temporary Root Active</string>
+    <string name="status_temp_inactive">Temporary Root Inactive</string>
+    <string name="status_hide_active">Root Hide Active</string>
+    <string name="status_hide_inactive">Root Hide Inactive</string>
+
+    <string name="btn_enable_root">Enable Root</string>
+    <string name="btn_disable_root">Disable Root</string>
+    <string name="btn_enable_temp">Enable Temp Root</string>
+    <string name="btn_disable_temp">Disable Temp Root</string>
+    <string name="btn_enable_hide">Enable Root Hide</string>
+    <string name="btn_disable_hide">Disable Root Hide</string>
+    <string name="btn_manage_exploits">Manage Exploits</string>
+    <string name="btn_view_logs">View Logs</string>
+    <string name="btn_export_logs">Export Logs</string>
+    <string name="btn_clear_logs">Clear Logs</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="btn_install">Install</string>
+    <string name="btn_uninstall">Uninstall</string>
+    <string name="btn_execute">Execute</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+
+    <!-- Root Types -->
+    <string name="root_type_magisk">Magisk</string>
+    <string name="root_type_kernelsu">KernelSU</string>
+    <string name="root_type_supersu">SuperSU</string>
+    <string name="root_type_phh">PHH Superuser</string>
+    <string name="root_type_unknown">Unknown</string>
+
+    <!-- Temp Root -->
+    <string name="temp_root_duration">Duration (minutes)</string>
+    <string name="temp_root_auto_disable">Auto-disable after duration</string>
+    <string name="temp_root_remaining">Time remaining: %1$s</string>
+    <string name="temp_root_warning">Temporary root grants root access for a limited time. It will automatically revert after the duration expires.</string>
+
+    <!-- Root Hide -->
+    <string name="hide_mode_magisk">Magisk Hide (Legacy)</string>
+    <string name="hide_mode_zygisk">Zygisk (Recommended)</string>
+    <string name="hide_mode_shamiko">Shamiko</string>
+    <string name="hide_mode_kernel">Kernel-level Hide</string>
+    <string name="hide_target_apps">Target Apps to Hide From</string>
+    <string name="hide_add_app">Add App</string>
+    <string name="hide_remove_app">Remove</string>
+    <string name="hide_all_apps">Hide from All Apps</string>
+    <string name="hide_system_apps">Include System Apps</string>
+    <string name="hide_deny_list">Deny List Mode</string>
+    <string name="hide_allow_list">Allow List Mode</string>
+
+    <!-- Exploits -->
+    <string name="exploit_category_local">Local Privilege Escalation</string>
+    <string name="exploit_category_kernel">Kernel Exploits</string>
+    <string name="exploit_category_boot">Boot Image Exploits</string>
+    <string name="exploit_category_framaroot">Framaroot-style</string>
+    <string name="exploit_name_dirtycow">Dirty COW (CVE-2016-5195)</string>
+    <string name="exploit_name_janus">Janus (CVE-2017-13156)</string>
+    <string name="exploit_name_blueborne">BlueBorne</string>
+    <string name="exploit_name_kpti">KPTI Bypass</string>
+    <string name="exploit_name_rambleed">RAMbleed</string>
+    <string name="exploit_desc_dirtycow">Race condition in copy-on-write mechanism</string>
+    <string name="exploit_desc_janus">APK signature verification bypass</string>
+    <string name="exploit_warning">Exploits are experimental and may brick your device. Use at your own risk.</string>
+    <string name="exploit_requires_reboot">Requires reboot after execution</string>
+    <string name="exploit_requires_root">Requires existing root access</string>
+    <string name="exploit_status_available">Available</string>
+    <string name="exploit_status_installed">Installed</string>
+    <string name="exploit_status_running">Running</string>
+    <string name="exploit_status_failed">Failed</string>
+    <string name="exploit_status_incompatible">Incompatible</string>
+
+    <!-- Settings -->
+    <string name="settings_general">General</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_advanced">Advanced</string>
+    <string name="settings_about">About</string>
+
+    <string name="setting_auto_start">Auto-start on boot</string>
+    <string name="setting_auto_start_summary">Automatically restore root state on device boot</string>
+    <string name="setting_notifications">Show notifications</string>
+    <string name="setting_notifications_summary">Show persistent notification when root is active</string>
+    <string name="setting_biometric_lock">Biometric lock</string>
+    <string name="setting_biometric_lock_summary">Require biometric authentication to access app</string>
+    <string name="setting_theme">Theme</string>
+    <string name="setting_theme_summary">Choose app theme</string>
+    <string name="setting_language">Language</string>
+    <string name="setting_log_level">Log level</string>
+    <string name="setting_log_level_summary">Set logging verbosity</string>
+    <string name="setting_backup_config">Backup configuration</string>
+    <string name="setting_restore_config">Restore configuration</string>
+    <string name="setting_clear_logs">Clear all logs</string>
+    <string name="setting_export_logs">Export logs</string>
+
+    <string name="setting_magisk_path">Magisk binary path</string>
+    <string name="setting_magisk_path_summary">Custom path to magisk binary (advanced)</string>
+    <string name="setting_shell_type">Preferred shell</string>
+    <string name="setting_shell_type_summary">Choose shell for command execution</string>
+    <string name="setting_selinux_mode">SELinux mode</string>
+    <string name="setting_selinux_mode_summary">Set SELinux enforcement mode</string>
+    <string name="setting_zygisk_enabled">Enable Zygisk</string>
+    <string name="setting_zygisk_enabled_summary">Enable Zygisk for better root hiding</string>
+    <string name="setting_deny_list_mode">Deny list mode</string>
+    <string name="setting_deny_list_mode_summary">Hide root from selected apps (deny list) vs allow list</string>
+
+    <string name="about_version">Version %1$s</string>
+    <string name="about_build">Build %1$s</string>
+    <string name="about_license">Licenses</string>
+    <string name="about_privacy">Privacy Policy</string>
+    <string name="about_github">GitHub Repository</string>
+    <string name="about_telegram">Telegram Channel</string>
+    <string name="about_donate">Donate</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_title_confirm">Confirm Action</string>
+    <string name="dialog_msg_enable_root">This will attempt to gain root access via Magisk. Continue?</string>
+    <string name="dialog_msg_disable_root">This will revoke root access. Continue?</string>
+    <string name="dialog_msg_temp_root">Enable temporary root for %1$d minutes?</string>
+    <string name="dialog_msg_exploit_warning">This exploit may brick your device. Are you sure you want to continue?</string>
+    <string name="dialog_msg_uninstall_exploit">Uninstall this exploit? This action cannot be undone.</string>
+    <string name="dialog_msg_clear_logs">Clear all logs? This action cannot be undone.</string>
+    <string name="dialog_msg_reboot_required">A reboot is required for changes to take effect. Reboot now?</string>
+
+    <!-- Toasts/Notifications -->
+    <string name="toast_root_enabled">Root access enabled</string>
+    <string name="toast_root_disabled">Root access disabled</string>
+    <string name="toast_temp_root_enabled">Temporary root enabled for %1$d minutes</string>
+    <string name="toast_temp_root_disabled">Temporary root disabled</string>
+    <string name="toast_temp_root_expired">Temporary root expired</string>
+    <string name="toast_hide_enabled">Root hide enabled</string>
+    <string name="toast_hide_disabled">Root hide disabled</string>
+    <string name="toast_exploit_installed">Exploit installed successfully</string>
+    <string name="toast_exploit_failed">Exploit installation failed: %1$s</string>
+    <string name="toast_exploit_executed">Exploit executed</string>
+    <string name="toast_config_saved">Configuration saved</string>
+    <string name="toast_config_restored">Configuration restored</string>
+    <string name="toast_logs_cleared">Logs cleared</string>
+    <string name="toast_logs_exported">Logs exported to %1$s</string>
+    <string name="toast_error">Error: %1$s</string>
+    <string name="toast_success">Success</string>
+    <string name="toast_biometric_failed">Biometric authentication failed</string>
+    <string name="toast_no_root">Root access not available</string>
+    <string name="toast_no_magisk">Magisk not detected</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_root">Root Management</string>
+    <string name="notif_channel_exploit">Exploit Execution</string>
+    <string name="notif_title_root_active">Root Access Active</string>
+    <string name="notif_text_root_active">Tap to disable root access</string>
+    <string name="notif_title_temp_root">Temporary Root Active</string>
+    <string name="notif_text_temp_root">Expires in %1$s</string>
+    <string name="notif_title_hide_active">Root Hide Active</string>
+    <string name="notif_text_hide_active">Root is hidden from target apps</string>
+    <string name="notif_title_exploit_running">Exploit Running</string>
+    <string name="notif_text_exploit_running">%1$s is executing</string>
+
+    <!-- Errors -->
+    <string name="error_root_check_failed">Failed to check root status</string>
+    <string name="error_magisk_not_found">Magisk not found. Please install Magisk first.</string>
+    <string name="error_shell_execution_failed">Shell command execution failed</string>
+    <string name="error_file_not_found">File not found: %1$s</string>
+    <string name="error_permission_denied">Permission denied</string>
+    <string name="error_incompatible_device">This exploit is not compatible with your device</string>
+    <string name="error_exploit_execution_failed">Exploit execution failed: %1$s</string>
+    <string name="error_database">Database error: %1$s</string>
+    <string name="error_encryption">Encryption error: %1$s</string>
+
+    <!-- Labels -->
+    <string name="label_version">Version</string>
+    <string name="label_build_date">Build Date</string>
+    <string name="label_device">Device</string>
+    <string name="label_android_version">Android Version</string>
+    <string name="label_arch">Architecture</string>
+    <string name="label_api_level">API Level</string>
+    <string name="label_selinux">SELinux Status</string>
+    <string name="label_kernel">Kernel Version</string>
+    <string name="label_magisk_version">Magisk Version</string>
+    <string name="label_uptime">Uptime</string>
+
+    <!-- About -->
+    <string name="about_about">About PixelSU</string>
+</resources>
+

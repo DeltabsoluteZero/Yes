@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>System Default</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>system</item>
+    </string-array>
+
+    <string-array name="shell_entries">
+        <item>Auto</item>
+        <item>SH</item>
+        <item>Bash</item>
+        <item>Zsh</item>
+        <item>Toybox</item>
+        <item>Toolbox</item>
+    </string-array>
+    <string-array name="shell_values">
+        <item>auto</item>
+        <item>sh</item>
+        <item>bash</item>
+        <item>zsh</item>
+        <item>toybox</item>
+        <item>toolbox</item>
+    </string-array>
+
+    <string-array name="selinux_entries">
+        <item>Unchanged</item>
+        <item>Enforcing</item>
+        <item>Permissive</item>
+    </string-array>
+    <string-array name="selinux_values">
+        <item>unchanged</item>
+        <item>enforcing</item>
+        <item>permissive</item>
+    </string-array>
+</resources>

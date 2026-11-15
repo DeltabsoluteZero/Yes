@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/title_root_status" />
+        <item
+            android:id="@+id/nav_temp_root"
+            android:icon="@drawable/ic_timer"
+            android:title="@string/title_temp_root" />
+        <item
+            android:id="@+id/nav_root_hide"
+            android:icon="@drawable/ic_visibility_off"
+            android:title="@string/title_root_hide" />
+        <item
+            android:id="@+id/nav_exploits"
+            android:icon="@drawable/ic_bug_report"
+            android:title="@string/title_exploits" />
+        <item
+            android:id="@+id/nav_logs"
+            android:icon="@drawable/ic_article"
+            android:title="@string/title_logs" />
+    </group>
+
+    <item android:title="@string/settings_general">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/title_settings" />
+        </menu>
+    </item>
+
+</menu>
+
