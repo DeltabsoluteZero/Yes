@@ -10,16 +10,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fix Windows line endings + remove bogus SDK path
-        run: |
-          sed -i 's/\r$//' gradlew
-          chmod +x gradlew
-          rm -f local.properties
-
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
+
+      - name: Download fresh gradlew script
+        run: |
+          curl -L https://raw.githubusercontent.com/gradle/gradle/master/gradlew -o gradlew
+          chmod +x gradlew
+
+      - name: Remove bogus SDK path
+        run: rm -f local.properties
 
       - name: Build debug APK
         run: ./gradlew assembleDebug --stacktrace
